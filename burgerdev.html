@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <title>Burger Dev</title>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <img src="./imgs/logo.png" alt="logo">
+
+            <input type="email" placeholder="Digite seu E-mail" class="email">
+
+            <input type="password" placeholder="Digite sua senha" class="senha">
+
+            <button class="botao-login">Entrar</button>
+            <h4> caso não tenha:</h4>
+            <button class="botao-criar">Criar Conta</button>
+        </div>
+
+    </div>
+
+    <div class="site" style="display: none;">
+
+        <p class="usuario-logado"></p>
+        <input type="password" placeholder="Nova senha" class="nova-senha">
+
+        <button class="trocar-senha">Trocar Senha</button>
+
+        <button class="botao-sair">Sair</button>
+
+        <button class="abrir-admin">Admin</button>
+
+        <header>
+            <img src="./imgs/logo.png" class="logo" alt="Logo">
+        </header>
+
+        <h1><span>Dev</span> Burger 🍔</h1>
+
+        <p>Seja bem-vindo a <i><strong> Dev Burger. </strong></i> Aqui você verá os melhores Hambúrgueres e suas
+            melhores ofertas.</p>
+        <p>O que você vai querer hoje?</p>
+        <div class="container">
+            <input type="text" placeholder="Digite: bebidas, lanches, sobremesas, sucos..." class="campo-busca">
+            <img src="./imgs/lupa.png" class="lupa">
+        </div>
+        <button class="botao-selecionar">Selecionar</button>
+
+        <!-- BEBIDAS -->
+        <div class="categoria" data-categoria="bebidas">
+            <h2>🥤 Bebidas</h2>
+            <div class="cards">
+                <div class="card" data-nome="Coca-cola" data-preco="7.99">
+                    <img src="./imgs/X-Coca.png">
+                    <p>Coca-cola</p>
+                    <p><span>R$ 7,99</span></p>
+                </div>
+
+                <div class="card" data-nome="Sprite" data-preco="6.99">
+                    <img src="./imgs/X-Sprite.png">
+                    <p>Sprite</p>
+                    <p><span>R$ 6,99</span></p>
+                </div>
+
+                <div class="card" data-nome="Fanta" data-preco="6.99">
+                    <img src="./imgs/X-Fanta.png">
+                    <p>Fanta</p>
+                    <p><span>R$ 6,99</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUCOS -->
+        <div class="categoria" data-categoria="sucos">
+            <h2>🧃 Sucos</h2>
+            <div class="cards">
+                <div class="card" data-nome="Suco de Uva" data-preco="8.99">
+                    <img src="./imgs/X-Uva.png">
+                    <p>Suco de Uva</p>
+                    <p><span>R$ 8,99</span></p>
+                </div>
+
+                <div class="card" data-nome="Suco de Morango" data-preco="8.99">
+                    <img src="./imgs/X-Morango.png">
+                    <p>Suco de Morango</p>
+                    <p><span>R$ 8,99</span></p>
+                </div>
+
+                <div class="card" data-nome="Suco de Laranja" data-preco="8.99">
+                    <img src="./imgs/X-Laranja.png">
+                    <p>Suco de Laranja</p>
+                    <p><span>R$ 8,99</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- LANCHES -->
+        <div class="categoria" data-categoria="lanches">
+            <h2>🍔 Lanches</h2>
+            <div class="cards">
+                <div class="card" data-nome="X-Bacon" data-preco="16.99">
+                    <img src="./imgs/X-bacon.png">
+                    <p>X-Bacon</p>
+                    <p><span>R$ 16,99</span></p>
+                </div>
+
+                <div class="card" data-nome="X-Tudo" data-preco="18.99">
+                    <img src="./imgs/X-tudo.png">
+                    <p>X-Tudo</p>
+                    <p><span>R$ 18,99</span></p>
+                </div>
+
+                <div class="card" data-nome="X-Salada" data-preco="14.99">
+                    <img src="./imgs/X-salada.png">
+                    <p>X-Salada</p>
+                    <p><span>R$ 14,99</span></p>
+                </div>
+
+                <div class="card" data-nome="X-Egg" data-preco="15.99">
+                    <img src="./imgs/X-egg.png">
+                    <p>X-Egg</p>
+                    <p><span>R$ 15,99</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOBREMESAS -->
+        <div class="categoria" data-categoria="sobremesas">
+            <h2>🍨 Sobremesas</h2>
+            <div class="cards">
+                <div class="card" data-nome="Casquinha Chocolate" data-preco="7.99">
+                    <img src="./imgs/X-Chocolate.png">
+                    <p>Casquinha Chocolate</p>
+                    <p><span>R$ 7,99</span></p>
+                </div>
+
+                <div class="card" data-nome="Casquinha Baunilha" data-preco="7.99">
+                    <img src="./imgs/X-Baunilha.png">
+                    <p>Casquinha Baunilha</p>
+                    <p><span>R$ 7,99</span></p>
+                </div>
+
+                <div class="card" data-nome="Casquinha Mista" data-preco="7.99">
+                    <img src="./imgs/X-Mista.png">
+                    <p>Casquinha Mista</p>
+                    <p><span>R$ 7,99</span></p>
+                </div>
+
+                <div class="card" data-nome="Milk Shake Morango" data-preco="12.90">
+                    <br><img src="./imgs/X-Shake.png">
+                    <br><br><br>
+                    <p>Milk Shake Morango</p>
+                    <p><span>R$ 12,90</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SACOLA -->
+        <h2>🛒 Sacola</h2>
+        <div class="sacola">
+            <ul class="lista-sacola"></ul>
+        </div>
+
+        <p>Total: <span class="total">0</span></p>
+
+        <h2>👀Observação</h2>
+        <textarea rows="4" cols="70" id="observacao" placeholder="Digite uma observação... Ex: Retire a cebola." class="observacao" value="">
+</textarea>
+        <br><button type="button" id="botaoObservacao" class="botao-observacao">Confirmar</button>
+
+        <button class="botao-finalizar">Finalizar Pedido</button>
+
+    </div>
+
+    <div class="checkout-tela" style="display: none;">
+
+        <div class="rastreamento" style="display: none;">
+
+            <h2>Rastreamento do Pedido</h2>
+
+            <p class="status-pedido">Pedido Recibido 📦</p>
+
+            <div class="barra-box">
+                <div class="barra-progresso"></div>
+            </div>
+
+        </div>
+
+        <h1>Finalizar Pedido 🍔</h1>
+
+        <label>Tipo do Pedido:</label>
+        <select class="tipo-pedido">
+            <option>Loja</option>
+            <option>Entrega</option>
+        </select>
+
+        <div class="endereco-box" style="display: none;">
+
+            <input type="text" placeholder="Rua" class="rua">
+            <input type="text" placeholder="Número" class="numero">
+            <input type="text" placeholder="Bairro" class="bairro">
+
+        </div>
+
+        <label>Pagamento:</label>
+        <select class="pagamento">
+            <option>Pix</option>
+            <option>Cartão</option>
+            <option>Dinheiro</option>
+        </select>
+
+        <label>Avaliação:</label>
+        <select class="avaliacao">
+            <option>⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐⭐</option>
+        </select>
+
+        <div>
+        <button><a class="confirmar-pedido" href="../CARRINHO (DevBurger)/carrinho.html">Confirmar Pedido</a></button>
+        </div>
+
+    </div>
+
+    <div class="admin" style="display: none;">
+
+        <h1>Painel Admin 👑</h1>
+
+        <ul class="lista-pedidos"></ul>
+
+        <button class="fechar-admin">Fechar</button>
+
+        <div class="notificacao"></div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
